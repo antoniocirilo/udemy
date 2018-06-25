@@ -1,0 +1,75 @@
+/*#box{
+	width: 300px;
+	height: 300px;
+	background: url("../img/camera.png");
+	border-radius: 20px 50px 80px 100px;
+	margin-left: 20px; */
+	/*box-sizing: border-box;
+}
+#box h1{
+	background: rgba(255,255,255, 0.6);
+	border-bottom: 2px solid #fff;
+}*/
+/*#box{
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(red, yellow);
+}
+body{
+	background: radial-gradient(green, pink, red, yellow);
+}*/
+#box1{
+	width: 400px;
+	height: 400px;
+	margin: 50px auto;
+	background-color: #009670;
+	box-shadow: 4px 4px black;
+}
+#box1 h1{
+	color: white;
+	font-size: 60px;
+	/*text-shadow: 10px 10px 20px black;*/
+	text-shadow: 4px 4px black;
+}
+/*Animações CSS*/
+
+@keyframes animacao-box{
+	from{
+		background-color: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+
+	}
+	to{
+		background-color: yellow;
+		border-radius: 50%;
+		top: 200px;
+		left: 200px;
+	}
+}
+#box-animacao{
+	background-color: red;
+	width: 300px;
+	height: 300px;
+	margin: 20px auto;
+	position: relative;
+	animation-name: animacao-box; /*define animação*/
+	animation-duration: 5s; /*define a duração*/
+	animation-delay: 3s; /*define o tempo antes que comece*/
+	animation-iteration-count: 2; /*define a quantidade de vezes que será transmitido*/
+	animation-direction: alternate;/*define a direção*/
+}
+
+/*Transições:*/
+#box2{
+	background: orange;
+	width: 300px;
+	height: 300px;
+}
+
+#box2:hover{
+	background: black;
+	width: 400px;
+	transition: all 8s;
+}
