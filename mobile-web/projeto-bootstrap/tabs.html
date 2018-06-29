@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Tabs</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/estilo.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+     <div class="page-header">
+       <h1>Bootstrap Tabs</h1>
+       <p class="lead"> Alternar facilmente entre conteúdos</p>
+     </div>
+
+     <ul class="nav nav-pills" role="tablist">
+       <li class="active"> <a href="#info" role="tab" data-toggle="tab">Informações sobre o produto</a> </li>
+       <li> <a href="#avaliacoes"  role="tab" data-toggle="tab">Avaliações</a> </li>
+       <li> <a href="#compre"  role="tab" data-toggle="tab">Compre também</a> </li>
+     </ul>
+
+     <div class="tab-content">
+       
+     </div>
+
+     <div class="tab-pane active" role="tabpanel" id="info">
+       <h3>Informações</h3>
+       <p>Informações do paragráfo que se está usando para blá blá blá blá blá, Informações</p>
+     </div>
+     <div class="tab-pane" role="tabpanel" id="avaliacoes">
+       <h3>Avaliações</h3>
+       <p>Informações do paragráfo que se está usando para blá blá blá blá blá, Avaliações</p>
+     </div>
+     <div class="tab-pane" role="tabpanel" id="compre">
+       <h3>Compre</h3>
+       <p>Informações do paragráfo que se está usando para blá blá blá blá blá, Compre</p>
+     </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('#myTabs a').click(function (e) {
+       e.preventDefault()
+      $(this).tab('show')
+      })
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
