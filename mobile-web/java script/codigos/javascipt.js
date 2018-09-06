@@ -1,0 +1,1 @@
+alert("Teste de Inclusão de JavaScript");
