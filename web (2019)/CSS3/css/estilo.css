@@ -1,4 +1,31 @@
+/*
 .texto{
 	color: red;
 	background: orange;
+}
+.conteudo {
+	border: 1px solid red;
+	width: 150px;
+	padding: 20px;
+	margin: 20px;
+}
+*/
+.conteudo {
+	background: blue;
+	border: 1px solid gray;
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+.conteudo1 {
+	background: red;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+.conteudo2{
+	border: 1px solid red;
+	clear: both;
 }
